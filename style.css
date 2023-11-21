@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+body{
+    margin: 0;
+    background: #000000;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 900px;
+}
+
+.carrossel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 40s infinite forwards linear;
+
+}
+
+.imagem{
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    display: flex;
+    border-bottom: #000000;
+    border-radius: 20px;
+    border-top: #000000;
+    padding-block-start: 100px;
+    overflow: hidden;
+    text-overflow: inherit;
+    letter-spacing: normal;
+}
+
+.imagem span{
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    pointer-events: none;
+    
+}
+
+@keyframes rotate360 {
+    
+    from{
+        transform: rotateY(0deg);
+
+    }
+
+    to{
+        transform: rotateY(-360deg);
+    }
+}
+
+.imagem:nth-child(1){
+    background-image: url(https://imgb.ifunny.co/images/6e51c510281ca6e654a0767ee039d2b6c500ede27b1cd4dccae5ea1800bfa564_1.jpg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+    background-image: url(https://imgb.ifunny.co/images/6e51c510281ca6e654a0767ee039d2b6c500ede27b1cd4dccae5ea1800bfa564_1.jpg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+    background-image: url(https://i.ytimg.com/vi/ihCsolHId7A/sddefault.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+    background-image: url(https://i.ytimg.com/vi/jYjDCPnxk-U/hqdefault.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://i.pinimg.com/564x/1a/bc/ff/1abcff63b9e97132bc146886755f3a1a.jpg);
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2aM-cjeA0q0Kk5EjpWcLFU09gj5RQx-0OfWKNMfv5cwxUn1Vyoc2_YiUA99bHKAiEUAU&usqp=CAU);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4lA-lJPsqe4UgMMchCpPg4akjuMwgJEwR4be8O-vxAQZ7F2pclSbKwlPywwPibz9jKoA&usqp=CAU);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+    background-image: url(https://s3.memeshappen.com/memes/Steve--meme-55074.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+.span{
+    font-family: 'Courier New', Courier, monospace;
+}
